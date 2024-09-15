@@ -1,7 +1,7 @@
 /* General styling */
 body {
   font-family: "Roboto", sans-serif;
-  background: url("one.jpg") no-repeat center center fixed;
+  background: url("assets/one.jpg") no-repeat center center fixed;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -127,6 +127,6 @@ footer {
 
 /* Dynamic background change when winner is announced */
 body.winner {
-  background: url("two.jpg") no-repeat center center fixed;
+  background: url("assets/two.jpg") no-repeat center center fixed;
   background-size: cover;
 }
