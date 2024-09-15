@@ -1,7 +1,7 @@
 /* General styling */
 body {
   font-family: "Roboto", sans-serif;
-  background: url("assets/one.jpg") no-repeat center center fixed;
+  background: url("assets/onDuty.jpg") no-repeat center center fixed;
   background-size: cover;
   background-attachment: fixed; /* Keeps the image fixed when resizing */
   display: flex;
@@ -141,7 +141,7 @@ footer {
 
 /* Dynamic background change when winner is announced */
 body.winner {
-  background: url("assets/two.jpg") no-repeat center center fixed;
+  background: url("assets/peakpx.jpg") no-repeat center center fixed;
   background-size: cover;
   background-attachment: fixed; /* Keep the image fixed */
 }
@@ -149,7 +149,7 @@ body.winner {
 /* General styling */
 body {
   font-family: "Roboto", sans-serif;
-  background: url("assets/one.jpg") no-repeat center center fixed;
+  background: url("assets/onDuty.jpg") no-repeat center center fixed;
   background-size: cover;
   background-attachment: fixed;
   display: flex;
@@ -165,7 +165,7 @@ body {
 
 /* Dynamic background change when winner is announced */
 body.winner {
-  background: url("assets/two.jpg") no-repeat center center fixed;
+  background: url("assets/peakpx.jpg") no-repeat center center fixed;
   background-size: cover;
   background-attachment: fixed;
 }
