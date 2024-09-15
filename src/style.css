@@ -19,7 +19,7 @@ body {
   margin-bottom: 20px;
   font-size: 28px;
   font-weight: bold;
-  color: #ff304f; /* Sporty red */
+  color: #3086ff; /* Sporty red */
   text-align: center;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -39,7 +39,7 @@ body {
     0,
     0.5
   ); /* Increased transparency for a more pronounced background */
-  border: 3px solid #ff304f; /* Red borders inspired by sporty cars */
+  border: 3px solid #3086ff; /* Red borders inspired by sporty cars */
   font-size: 48px;
   font-weight: bold;
   color: #c1c1c1; /* Koenigsegg black for text */
@@ -106,7 +106,7 @@ body {
 
 h1 {
   font-size: 48px;
-  color: #ff304f; /* Sporty red for headings */
+  color: #3086ff; /* Sporty red for headings */
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
 }
