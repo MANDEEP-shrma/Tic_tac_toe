@@ -1,8 +1,4 @@
-# React + Vite
+#This is my first react basic tic tac toe app that i created in the journey of my learning 
+#The functionality that exist in this app is reffered from React official docs.
+#Today I understood the use of React and how it maintain the state sooon new projects will come .. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
