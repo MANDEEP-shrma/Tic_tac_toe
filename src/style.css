@@ -145,3 +145,72 @@ body.winner {
   background-size: cover;
   background-attachment: fixed; /* Keep the image fixed */
 }
+
+/* General styling */
+body {
+  font-family: "Roboto", sans-serif;
+  background: url("assets/one.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  transition: background 0.5s ease-in-out;
+}
+
+/* Dynamic background change when winner is announced */
+body.winner {
+  background: url("assets/two.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Adjust background for mobile responsiveness */
+@media (max-width: 768px) {
+  body {
+    background-size: contain;
+    background-position: center;
+  }
+
+  body.winner {
+    background-size: contain;
+    background-position: center; /* Adjust position for better visibility */
+  }
+
+  .square {
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+  }
+
+  .status {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-size: contain;
+    background-position: center top;
+  }
+
+  body.winner {
+    background-size: contain;
+    background-position: center top; /* Keep the winner image aligned at the top */
+  }
+
+  .square {
+    width: 60px;
+    height: 60px;
+    font-size: 32px;
+  }
+
+  .status {
+    font-size: 18px;
+  }
+}
