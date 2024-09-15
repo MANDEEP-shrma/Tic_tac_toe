@@ -3,11 +3,14 @@ body {
   font-family: "Roboto", sans-serif;
   background: url("assets/one.jpg") no-repeat center center fixed;
   background-size: cover;
+  background-attachment: fixed; /* Keeps the image fixed when resizing */
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  flex-direction: column; /* Ensure items are stacked vertically */
+  min-height: 100vh; /* Maintain full viewport height */
   margin: 0;
+  padding: 0; /* Ensure no extra margins */
   color: #ffffff;
   transition: background 0.5s ease-in-out;
 }
@@ -26,6 +29,7 @@ body {
 /* Styling the board and squares */
 .board-row {
   display: flex;
+  justify-content: center; /* Ensure rows are centered */
 }
 
 .square {
@@ -59,8 +63,13 @@ body {
   transform: scale(0.95);
 }
 
-/* Responsive design */
+/* Adjust content positioning on smaller screens */
 @media (max-width: 768px) {
+  body {
+    background-size: contain;
+    background-position: center;
+  }
+
   .square {
     width: 80px;
     height: 80px;
@@ -73,6 +82,11 @@ body {
 }
 
 @media (max-width: 480px) {
+  body {
+    background-size: contain;
+    background-position: center top;
+  }
+
   .square {
     width: 60px;
     height: 60px;
@@ -129,4 +143,5 @@ footer {
 body.winner {
   background: url("assets/two.jpg") no-repeat center center fixed;
   background-size: cover;
+  background-attachment: fixed; /* Keep the image fixed */
 }
