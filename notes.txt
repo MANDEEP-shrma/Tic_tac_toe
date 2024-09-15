@@ -1,0 +1,42 @@
+We are creating a tictactoe to learn how react works how we can change the state of the coponents 
+and the other things Here below I write the imp things i learn like rules of the react how things 
+get injects and sort of that things
+
+1)If you want to tell the react that check the state of the following same components differently 
+then declare the state variable inside child component so that each copy of that component is
+independent to each other doesn't matter that they are the instance of same source (like square
+component in our project)
+But on the other side if you want that change in one component will reflect to each copy of the
+following instance (Like notification counter if you read the messages it will show 0 to each 
+bell sign in the app) then declare the state inside the parent component and send the data of 
+the state using props!
+
+2)You can also create one universal CSS file(not recommended) and embed it in main.jsx
+
+3)Child component is not able to access the state function directly so for that we create a
+handler function in which we call our stateChange function now this function also exist in the 
+parent function but if child component want to access that fucntion we have to pass it as a 
+props
+
+4)JavaScript supports closures which means an inner function (e.g. handleClick) has access to
+variables and functions defined in a outer function (e.g. Board). The handleClick function
+can read the squares state and call the setSquares method because they are both defined inside
+of the Board function.
+
+5)What to do when you have to send an argument with the function example onClick={functionRef}
+here we can't send the argument to the function onClick={fucntionRef(something)} why this will
+call the function immediately and we don't want that so to avoid the instant calling we can also
+wrap this thing in another fucntion like"  onClick={fucntion another(){fucntionRef(something)}}" 
+if you found this some how hard to understand you can do it using arrow function 
+like onClick={()=>functionRef(something)}
+
+6)Why we used the nextSquares variable and then copied the squares array why we are not directly
+updating the actual array rather creating its copy.
+THIS creating copy and using it to make the changes is known as IMMUTABILITY in which the old 
+data is not altered to do desiresd changes instead we pass the new data with the desired changes
+-----IMMUTABILITY----
+Immutability makes complex features much easier to implement. Later in this tutorial, you will
+implement a “time travel” feature that lets you review the game’s history and “jump back” to
+past moves. This functionality isn’t specific to games—an ability to undo and redo certain actions
+is a common requirement for apps. Avoiding direct data mutation lets you keep previous versions of
+the data intact, and reuse them later.

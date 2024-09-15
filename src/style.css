@@ -1,0 +1,132 @@
+/* General styling */
+body {
+  font-family: "Roboto", sans-serif;
+  background: url("one.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #ffffff;
+  transition: background 0.5s ease-in-out;
+}
+
+.status {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ff304f; /* Sporty red */
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Styling the board and squares */
+.board-row {
+  display: flex;
+}
+
+.square {
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Increased transparency for a more pronounced background */
+  border: 3px solid #ff304f; /* Red borders inspired by sporty cars */
+  font-size: 48px;
+  font-weight: bold;
+  color: #363636; /* Koenigsegg black for text */
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 10px;
+}
+
+.square:hover {
+  background: #292929; /* Darker black on hover */
+  transform: scale(1.05);
+}
+
+.square:active {
+  background: #1f1f1f; /* Pressed state */
+  transform: scale(0.95);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .square {
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+  }
+
+  .status {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .square {
+    width: 60px;
+    height: 60px;
+    font-size: 32px;
+  }
+
+  .status {
+    font-size: 18px;
+  }
+}
+
+/* Full-page design for remaining website */
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 48px;
+  color: #ff304f; /* Sporty red for headings */
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+button.cta {
+  padding: 12px 30px;
+  background: #363636; /* Koenigsegg black for buttons */
+  border: none;
+  color: #ffffff; /* White text for buttons */
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.cta:hover {
+  background: #202020; /* Darker black on hover */
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* Dynamic background change when winner is announced */
+body.winner {
+  background: url("two.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
