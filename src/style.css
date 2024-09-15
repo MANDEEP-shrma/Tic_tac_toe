@@ -81,7 +81,7 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
   body {
     background-size: contain;
     background-position: center top;
@@ -193,7 +193,7 @@ body.winner {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
   body {
     background-size: contain;
     background-position: center top;
